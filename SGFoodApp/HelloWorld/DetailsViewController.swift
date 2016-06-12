@@ -27,7 +27,7 @@ class DetailsViewController: UIViewController {
         foodNameLabel.text = foodName!
         foodDesTextView.text = foodDes!
         foodThumbImage.image = UIImage(named: foodImgName!)
-
+    
         // Do any additional setup after loading the view.
     }
 

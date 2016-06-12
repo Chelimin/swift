@@ -32,6 +32,7 @@ class ViewController: UIViewController {
     var arrayFood = ["Chicken rice", "Chilli crab", "Laksa", "Nasi Lemak"]
     var arrayDes = ["Chicken with rice", "Chilli with crab", "Noodles with curry","Coconut rice"]
     var arrayImg = ["chickenrice", "chillicrab","laksa","nasilemak"]
+    //just img names will do, prog will find images in files!
     
     override func viewDidLoad() {
         super.viewDidLoad()
