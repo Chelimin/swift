@@ -13,6 +13,7 @@
 		854D21091D0BAD180097BD2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 854D21081D0BAD180097BD2A /* Assets.xcassets */; };
 		854D210C1D0BAD180097BD2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 854D210A1D0BAD180097BD2A /* LaunchScreen.storyboard */; };
 		8560ABCA1D0BFA6D00D52458 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8560ABC91D0BFA6D00D52458 /* DetailsViewController.swift */; };
+		85C8E7A61D1511CB00221870 /* CustomFoodTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C8E7A51D1511CB00221870 /* CustomFoodTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		854D210B1D0BAD180097BD2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		854D210D1D0BAD180097BD2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8560ABC91D0BFA6D00D52458 /* DetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		85C8E7A51D1511CB00221870 /* CustomFoodTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomFoodTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				854D21081D0BAD180097BD2A /* Assets.xcassets */,
 				854D210A1D0BAD180097BD2A /* LaunchScreen.storyboard */,
 				854D210D1D0BAD180097BD2A /* Info.plist */,
+				85C8E7A51D1511CB00221870 /* CustomFoodTableViewCell.swift */,
 			);
 			path = HelloWorld;
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 			files = (
 				854D21041D0BAD180097BD2A /* ViewController.swift in Sources */,
 				854D21021D0BAD180097BD2A /* AppDelegate.swift in Sources */,
+				85C8E7A61D1511CB00221870 /* CustomFoodTableViewCell.swift in Sources */,
 				8560ABCA1D0BFA6D00D52458 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -32,6 +32,7 @@ class ViewController: UIViewController {
     var arrayFood = ["Chicken rice", "Chilli crab", "Laksa", "Nasi Lemak"]
     var arrayDes = ["Chicken with rice", "Chilli with crab", "Noodles with curry","Coconut rice"]
     var arrayImg = ["chickenrice", "chillicrab","laksa","nasilemak"]
+    var arrayRestaurant = ["PizzaHut", "Jumbo","Texas"]
     //just img names will do, prog will find images in files!
     
     override func viewDidLoad() {
@@ -55,15 +56,47 @@ class ViewController: UIViewController {
             return
         }
         
-        let destinationVC = segue.destinationViewController as? DetailsViewController
+       let destinationVC = segue.destinationViewController as? DetailsViewController
         
-//        destinationVC?.foodName  = name
+//        let destinationVC = self.storyboard?.instantiateViewControllerWithIdentifier("DesinationViewController") as? DestinationViewController
+        
+//      destinationVC?.foodName  = name
         destinationVC?.foodName = arrayFood[tagIndex]
         destinationVC?.foodDes = arrayDes[tagIndex]
         destinationVC?.foodImgName = arrayImg[tagIndex]
         
     }
+    
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 2
+    }
+    
 
-
+    func tableView(tableView: UITableView, numberOfRowsInSection section:Int) -> Int{
+        
+        if section==0 {
+            return arrayFood.count
+        } else{
+            return arrayRestaurant.count
+        }
+        
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell{
+        let cell = tableView.dequeueReusableCellWithIdentifier("FoodCellIdentifier")
+        
+        if indexPath.section == 0 {
+            cell?.textLabel!.text = arrayFood[indexPath.row]
+        } else {
+            cell?.textLabel!.text = arrayRestaurant[indexPath.row]
+        }
+        
+        cell?.detailTextLabel?.text = "Hello"
+        
+        return cell! 
+    }
+    
+    
 }
 
